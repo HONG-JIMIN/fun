@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="100px"
+        android:layout_margin="100px"
+        android:text="결과화면"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:id="@+id/TV_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#CF0808"
+        android:textSize="70px"
+        android:layout_margin="300px"
+        android:textStyle="bold"
+        android:text="서브 액티비디 도착"/>
+
+</LinearLayout>

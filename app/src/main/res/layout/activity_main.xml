@@ -5,15 +5,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#9BECE9">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="100px"
+        android:textSize="100px"
+        android:gravity="center_horizontal"
+        android:text="멘토멘티 과제"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_margin="300px">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="입력 : "
+        android:textColor="#000000"
+        android:textSize="50px" />
+
+    <EditText
+        android:id="@+id/ET_user"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:hint="여기에 입력해주세요."
+        android:textColor="#000000"
+        android:textSize="60px" />
+
+
+
+</LinearLayout>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/BT_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        android:textColor="#A92EB6"/>
+
+    <Button
+        android:id="@+id/BT_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A92EB6"
+        android:text="취소" />
+
+
+
+</LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="100px"/>
+
+
+
+    
+
+
+
+
+
+
 
 </LinearLayout>
