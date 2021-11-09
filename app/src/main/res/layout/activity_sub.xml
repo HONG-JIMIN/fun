@@ -19,15 +19,57 @@
 
 
 
+
+
+        <TextView
+            android:id="@+id/TV_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#CF0808"
+            android:textSize="70px"
+            android:layout_margin="300px"
+            android:textStyle="bold"
+            android:text=""/>
+
+
     <TextView
-        android:id="@+id/TV_result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        android:text="입력값은 :"
         android:textColor="#CF0808"
         android:textSize="70px"
-        android:layout_margin="300px"
-        android:textStyle="bold"
-        android:text="서브 액티비디 도착"/>
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/BT_back"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:text="돌아가기"
+        android:backgroundTint="#306A1C" />
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

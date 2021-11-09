@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button BT_send;
     private EditText ET_user;
+    private Button BT_back;
     private String str;
     
 
@@ -22,10 +23,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ET_user = findViewById(R.id.ET_user);
+        ET_user = (EditText)findViewById(R.id.ET_user);
         BT_send = findViewById(R.id.BT_send);
 
+        BT_back = findViewById(R.id.BT_back);
+        BT_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        BT_send.setOnClickListener(new View.OnClickListener() {
+                ET_user.setText(null);
+            }
+        });
+
+
+                BT_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 str = ET_user.getText().toString();
